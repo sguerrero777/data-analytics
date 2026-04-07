@@ -1,0 +1,36 @@
+Sharleen Guerrero 
+
+Start by reviewing the data.gov home page. What is this?
+This is a open database established by the US Government with over 400,000 federal datasets publicly available on the site. Here an abundance of data lives where anyone can access it to be able to conduct research, develop web/mobile applications, design data visualization and much more.
+
+2. Go to Most Viewed Datasets. How many datasets are listed?
+In "Most Viewed Datasets" 402,363 datasets are listed.
+
+3. Find the Topic Category for Human Health. Review the range of data sources available for this topic. Why do you think these were tagged with the Human Health category?
+The data sources in the Human Health category range from national food expenditures, statistics on food access and livestock production data, clean air status, and ozone concentrations, and drinking water MCLs. These were tagged in the Human Health category although they are not medical datasets because these topics are all factors that directly contribute to the health of the population. Access to food, clean air that maintains a safe ozone layer protecting humans from harmful UV rays, and clean drinking water are all basic human necessities. 
+
+
+4. Go to the Food Price Outlook. Review the catalog page for this dataset. How can you navigate to additional datasets from the USDA?
+To navigate to additional datasets from the USDA, go to the dataset path at the top of the catalog page, and click on Department of Agriculture. It should look like a home icon / courthouse icon / Department of Agriculture. There are multiple other navigation paths as well.
+
+5. Go back to the data.gov home page. This time, click on Datasets by Organization.
+In "Datasets by Organization" 132 organizations are listed. 
+
+6. Try searching for your city, county, and state. What organizations are returned?
+When I search for my city, county, and state, no organizations are found. Even when terms are searched individually, no organizations are returned. This may be because local cities don't have the scope to be federal data publishers and this database focuses on federal data.
+
+7. Search for USDA, and click into the result. Within the USDA datasets, search for food composition. Notice that the top three results are all datasets concerning nutrition information. Try searching the USDA page for nutrition. How does that affect your results?
+It affected my results by shifting the data from food composition science to data about nutrition assistance programs. This shows that its important to be specific with your search terms when looking at data.
+
+a) One of the tricky things about working with data is that sometimes the terminology used by a data source is not obvious. You may need to dig around and be creative to find what you’re looking for.
+
+
+8. Go back to the results for food composition, and click on Food Data Central. Review the catalog page for this data source, then click on the button for Visit Page. Take some time to explore the Food Data Central website.
+
+a)Try searching for butter, or any of your favorite foods. What kind of results do you get? What happens when you click on a result?
+I searched for rice. Search results provided datasets about historical food components, nutrients and portions, experiments, and branded foods. When you click on a result, there are detailed tables with columns for food description, category, brand, and specific nutrient data such as calories, vitamins, and minerals by portion size. Some datasets may be dedicated to only branding of rice, it depends on the result you click.
+
+b)Go back to the home page. Find Foundation Foods, and click on Downloads. What kind of data can you find on this page? How big are these files? Where can you find more information on the data types available?
+On the Foundation Foods Downloads page you can find nutrient and food component data, with most is JSON or CSV format. The files are very large, ranging from a few hundred megabytes to a few gigabytes. To find more information on data types available, there is a data type documentation link under the Documentation heading. 
+
+
