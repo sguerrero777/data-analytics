@@ -1,0 +1,33 @@
+Sharleen Guerrero
+
+Click on “View responses” to see the Responses Summary. In your .txt file, write numbers 1 through 5 to represent the five survey questions. For each survey question, consider
+the following:
+
+1. What conclusion can you reach about the responses to this question?
+Conclusions I can reach about the responses to these questions are that the majority of students have a proactive mindset when it comes to class preparation (Question 1 and 4) with concerns about their ability to apply the concepts they learn to real world scenarios (question 5). When it came to the technological tools students had (question 2 and 3), responses were mixed; not all but over half of the students had external monitors, keyboards, and mouses.
+
+2. Is the default summary or visualization helpful? How could it be improved?
+The default visualizations for the open-ended questions are not helpful for identifying trends because answers are often long and wording between students is varied. This issue can be improved by selecting key phrases from responses such as "drinking coffee," "plugging in devices", and "reviewing notes" and creating a bar chart to manually plug in how often a response includes the phrase or similar phrasing to better identify which kind of response leads. 
+
+3. For questions with an “Other” option, where can you find the actual text of those responses? Do you notice anything that might be tricky about analyzing these?
+Questions 2 and 3 had an "Other" option, and the actual text for the responses is in the same column as the yes/no responses. This structure may make it distracting to analyze as the answers are all varied and not a binary yes or no.
+
+4. For questions calling for a written response, what challenges do you notice about finding trends or patterns in the answers provided?
+For questions calling for a written response, the biggest challenge was comparing responses. Some students gave detailed answers, some gave vague three word responses and some didn't respond at all and opted for the N/A option. This makes categorization to identify patterns trickier. 
+
+5. Now that you can see the responses, how might you recommend rephrasing this or question or the response options in a future survey?
+Now that I can see the variety of responses, in a future survey I'd consider giving students a set of responses to pick from, so there is at least some form of uniformity in answers and I'd easily be able to categorize them. 
+
+Next respond to the below questions:
+
+6. Is there anything that surprised you about the survey responses?
+Something that surprised me about the survey responses is that in a class of 25 students, over 50% of them had both a second monitor/device or external keyboard and mouse.
+
+7. Looking at the responses to questions 1 and 5, are there any ideas you might try to include in your morning routine, or any questions that you are also curious about?
+Based on the surveys responses, an idea I might try to include in my morning routine is practicing GitBash essentials since we consistently work with GitBash. Having a refresher of these commands before class can help me troubleshoot during class quicker since I'd have a stronger foundation. One question I am also curious about is applying the concepts we learn in Data Academy to real-world scenarios.
+
+8. Pretend you are the instructor. Is there anything you can learn from this survey to help in how you approach teaching this class?
+As an instructor, I can determine that there are a lot of concerns surrounding real world applications of the knowledge covered in the academy. Over 25% of students ask questions about applying concepts in real-world scenarios or extra  support such as tutoring. Knowing this data, as an instructor I'd be inclined to provide more opportunities in class for students to showcase their application of the concepts they learn in a judgment-free zone rather than iteration from the study guide. I'd want to ensure my students are understanding instead of memorizing. Practicing this skill will also benefit them in the internship phase and make them stand out.
+
+9. Again, pretend you are the instructor. Do you think it was helpful or not helpful to make this survey anonymous? Why or why not? (If you can see both pros and cons, you may include both.)
+Yes, it was helpful to make this survey anonymous because it eliminates any cognitive biases that we may have about certain people. It also heightens the data's accuracy as participants may feel safe with anonymity and answer more honestly. One potential con of making the survey anonymous is it limits the instructor's ability to follow up with students with specific concerns, such as those who had questions about additional tutoring support.
