@@ -1,0 +1,22 @@
+Sharleen Guerrero
+
+a) What information is being illustrated in each visualization?
+In the "Self-Description" comic, the three panels illustrate the amount of black ink their comics typically have in forms of a pie chart, bar graph, and scatter plot. In "Lakes and Oceans", the comic illustrates the depths of major lakes and ocean trenches. The comic draws them to scale and to emphasize depth, adds dark color, ships, submarines, and sea animals. In "A Timeline of Earth's Average Temperature", the comic uses a vertical line chart to illustrate Earth's changing climate since approximately 20,000 BCE. The chart also labels major event such as the development of language and human settlements. 
+
+b) What do you think is interesting or engaging about each of these examples?  
+What's interesting about each example is that they display information in a way that's easy for the general public to understand and rely heavily on creative mini drawings. "Self-Description" is creative because the comic uses charts to describe itself. "Lakes and Oceans" because it uses familiar things such as the Titanic of emperor pinguins to covey ocean depth, something the general public knows little about. In my opinion "Earth's Temperature Timeline" is the most interesting because it includes popular historical events relative to the changing temperature, and adds humorous little notes which makes the information easier to digest. 
+
+
+c) Each example uses a different visualization format. For each of them, why do you think the author chose that format? How does the format support the information being shared? 
+In "Self-Reflection", the author chose standard chart formats because they are simple enough to represent ink proportions in their comic. "Lakes and Oceans" uses a depth map because it perfectly illustrates the inherent depth of the ocean and trenches. Visually, it makes the depth easier to realize and a bar chart wouldn't have conveyed the same effect. The author "Earth's Temperature Timeline" also chose an effective vertical line chart because it highlights historical trends and the rises in temperatures consecutively. Although it could have been horizontal, it's more effective to have to vertical because it forces the audience to move through history gradually before being hit with the current spike in temperature, invoking real feelings. 
+
+d) Did these examples make you think? Did they evoke any feelings from you?  
+Yes, these examples made me reflect on the strategies and images people use to invoke feelings in their audience, which can sometimes bring a call to action. "Earth's Temperature Timeline," invoked a sense of urgency in me about humanity's future. 
+
+e) Which of these do you think tells the most compelling story? Why? 
+"Earth's Temperature Timeline" tells the most compelling story and was the most effective out of the three in evoking feelings from an audience. The chart formatting makes people feel the weight of humanity's history and the current high spike evokes a sense of alarm about humanity's future. I'm impressed that the comic was able to convey this with a simple chart rather than explicitly stating it. At the end of the chart, the author also forecasts different outcomes for Earth's future climate based on humanity's decisions: a best-case scenario, an optimistic scenario, and humanity's current path. Given the emissions from our harmful industrial activity, the chart makes it clear that we are not on the right path. This blend of data, history, and visuals turns a line chart into a narrative, making me realize that data storytelling is more than reiterating facts, but creating an impact that can drive real decisions.
+
+
+BONUS
+An infographic I found that is an interesting way to tell story about my data is Instagram's "Time Management" analysis which can be found in the Activity center. It uses a simple bar chart to convey the time you spent on Instagram every day within the week span. It's also calculates your daily average, which is a good way to reflect on how you manage your time on social media. 
+
