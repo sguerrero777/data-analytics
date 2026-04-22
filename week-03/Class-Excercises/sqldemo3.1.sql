@@ -121,3 +121,67 @@ SELECT CompanyName
 FROM Customers
 WHERE CompanyName LIKE 'A%';
 
+-- Example 24: Using WHERE Condition with Dates
+-- Define Column as DATE to only store DATE without the time, Northwind database need cleaning
+-- Retrieves OrderID, CustomerID, OrderDate for all orders with a shipped date of '1997-01-01'
+SELECT OrderID, CustomerID, OrderDate
+FROM Orders
+WHERE OrderDate = '1997-01-01';
+
+-- Example 26: Retrieves all orders placed in June 1977 using YEAR() AND MONTH() Functions
+SELECT OrderID, OrderDate
+FROM orders
+WHERE YEAR(OrderDate) = 1997 AND MONTH(OrderDate) = 6;
+
+-- Example 27: Using ASC, DESC
+-- Retrieve all product names and price in descending order
+SELECT ProductName, UnitPrice
+FROM products
+ORDER BY UnitPrice DESC;
+
+-- Example 28:
+-- Retrieves company names alphabetically by country then Name
+-- Customers are first grouped by Country alphabetically. Within each country, they are further sorted by CompanyName
+SELECT CompanyName, Country, City
+FROM customers
+ORDER BY Country ASC, CompanyName ASC;
+
+-- Example 32: Sampling Records with LIMIT
+-- Retrieves the top 5 most expensive products
+SELECT ProductName, UnitPrice
+FROM products 
+Order By UnitPrice DESC -- Orders it by most expensive
+LIMIT 5;
+
+-- Example 30: Using LIMIT OFFSET
+-- Retrieves products and prices for rows 6 through 10 and skips the first 5 rows;
+SELECT ProductName, UnitPrice
+FROM products 
+Order By UnitPrice DESC -- Orders it by most expensive
+LIMIT 5 OFFSET 5;
+
+-- Example 31: Using DISTINCT
+-- Retrieves only unique/non-duplicate values
+-- Returns each unique pairing of Country and City.
+-- If two customers share the same city, that city apppears only once
+SELECT DISTINCT Country, City
+FROM Customers
+ORDER BY Country, City;
+
+-- Example 33: Concatenation
+-- Returns Full Name from First and Last
+SELECT CONCAT(FirstName, ' ', LastName) AS 'Full Name',
+	Title
+FROM Employees;
+
+-- Example 36: Adding Calculations to Results
+-- Returns prodcuts with original price and a 10% discount
+-- This combines using an Alias for new and old totals
+SELECT ProductName, UnitPrice AS 'Original Price',
+UnitPrice * 0.90 AS '10% Discount Price'
+FROM products
+ORDER BY ProductName ASC;
+
+
+
+
