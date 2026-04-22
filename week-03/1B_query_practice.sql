@@ -37,7 +37,7 @@ SELECT SupplierID, CompanyName
 FROM suppliers
 WHERE CompanyName = 'Tokyo Traders'; -- SupplierID for "Tokyo Traders" is 4.
 
--- Finding all prodcucts from this supplier.
+-- Finding all products from this supplier.
 SELECT SupplierID, ProductName
 FROM products
 WHERE SupplierID = 4;
