@@ -6,8 +6,8 @@ USE northwind;
 SHOW TABLES;
 SELECT table_name
 FROM information_schema.tables
-WHERE table_schema - 'northwind'
-	AND table_type - 'BASE TABLE';
+WHERE table_schema = 'northwind'
+	AND table_type = 'BASE TABLE';
 
 -- Example 1: Retrieving specific columns from product table
 SELECT ProductName, UnitPrice FROM products; 
@@ -64,7 +64,7 @@ WHERE UnitPrice > 20 AND UnitsInStock > 50;
 -- Example 10: Retrieve all company amd country names from either UK or Ireland
 SELECT CompanyName, Country
 FROM Customers
-WHERE Country = 'UK' OR 'Ireland';
+WHERE Country = 'UK' OR Country = 'Ireland';
 
 -- Example 11: Retrieve all Products, CategoryID and UnitPrice for products with a CategoryID of 1 or 2 and a UnitPrice less than 20
 SELECT ProductName, CategoryID, UnitPrice
@@ -146,7 +146,7 @@ SELECT CompanyName, Country, City
 FROM customers
 ORDER BY Country ASC, CompanyName ASC;
 
--- Example 32: Sampling Records with LIMIT
+-- Example 29: Sampling Records with LIMIT
 -- Retrieves the top 5 most expensive products
 SELECT ProductName, UnitPrice
 FROM products 
