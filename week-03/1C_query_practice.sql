@@ -44,7 +44,7 @@ ORDER BY UnitsOnOrder DESC, ProductName;
 -- Returns 17 records
 
 -- Question 7: Write a query to list each of the job titles in employees, along with a count of how many employees hold each job title.
-SELECT Title, COUNT(DISTINCT EmployeeID) AS 'EmployeeCount'
+SELECT Title, COUNT(*) AS 'EmployeeCount'
 FROM employees
 GROUP BY Title;
 -- Returns counts: Sales Reps (6) and Inside Sales Coordinator, Sales Manager and Vice President of Sales (each 1)
