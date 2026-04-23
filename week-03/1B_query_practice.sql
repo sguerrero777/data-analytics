@@ -17,7 +17,6 @@ FROM products
 WHERE UnitsInStock = 0 AND UnitsOnOrder >= 1;
 -- Returns 1 record
 
-
 -- Question 4: Examine the products table. How does it identify the type (category) of each item sold? Where can you find a list of all categories? Write a set of queries to answer these  questions, ending with a query that creates a list of all the seafood items we carry.
 -- The products table identifies the type of each item sold with the CategoryID.
 -- To find a list of all categories, retrieve it from the categories table using the CategoryID and CategoryName.
