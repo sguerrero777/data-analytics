@@ -1,6 +1,7 @@
 
 -- ============================================================
 -- Northwind SQL Practice Questions (Parts A)
+-- Foundational SELECT Queries
 -- Sharleen Guerrero & Leon Poulson
 -- April 22, 2026
 -- ============================================================
