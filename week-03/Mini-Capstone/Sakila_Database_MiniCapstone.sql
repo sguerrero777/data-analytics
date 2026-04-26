@@ -130,78 +130,150 @@ ORDER BY `Revenue Rank`;
 -- Rental connects to payment through rental_id, and payment connects to store through staff_id.
 -- SUM calculates total revenue, COUNT counts total rentals, and RANK() combined with DESC orders stores by highest revenue.
 
-
 -- =========================================================
 -- Question 6: 
 -- Identify highest revenue-generating film categories.  
 -- ==========================================================
 SELECT c.name AS 'Category Name', 
-	SUM(p.amount) AS 'Category Revenue'
+    SUM(p.amount) AS 'Category Revenue'
 FROM payment p
 INNER JOIN rental r
-	ON r.rental_id = p.rental_id
+    ON r.rental_id = p.rental_id
 INNER JOIN inventory i
-	ON r.inventory_id = i.inventory_id
+    ON r.inventory_id = i.inventory_id
 INNER JOIN film_category fc
-	ON i.film_id = fc.film_id
+    ON i.film_id = fc.film_id
 INNER JOIN category c
-	ON fc.category_ID = c.category_id
-GROUP BY `Category Name`
+    ON fc.category_id = c.category_id
+GROUP BY c.name
 ORDER BY `Category Revenue` DESC;
 
 -- Explanation of Logic:
 -- Question demands revenue for each film category from highest to lowest.
 -- There is no direct link from payment to category, but a path is created.
 -- Payment links to rental through rental_id, rental links to inventory through
--- inventory_id, inventory links to film category through film_id and finally 
--- category is reached through shared category_id.
--- SUM(p.amount) calculates total revenue and group by collapses revenue into one
+-- inventory_id, inventory links to film_category through film_id, and finally
+-- category is reached through the shared category_id.
+-- SUM(p.amount) calculates total revenue and GROUP BY collapses payments into one
 -- row per category.
 -- Revenue is ordered in descending order to display the highest revenue category first.
-
 
 
 -- =========================================================
 -- Question 7: 
 -- Determine top revenue-generating customers.  
 -- ==========================================================
-SELECT CONCAT(c.first_name, ' ', c.last_name) AS 'Customer Name',
-    SUM(p.amount) AS 'Total Revenue',
-    RANK() OVER (ORDER BY SUM(p.amount) DESC) AS 'Customer Rank'
+SELECT s.store_id AS 'Store ID',
+    CONCAT(c.first_name, ' ', c.last_name) AS 'Customer Name',
+    SUM(p.amount) AS 'Total Spent',
+    COUNT(r.rental_id) AS 'Rental Count',
+    RANK() OVER (PARTITION BY s.store_id ORDER BY SUM(p.amount) DESC) AS 'Customer Rank'
 FROM customer c
 INNER JOIN payment p
     ON c.customer_id = p.customer_id
-GROUP BY c.customer_id, `Customer Name`
-ORDER BY `Customer Rank`;
--- Explanation of logic:
--- Question demands the top revenue-generating customers.
--- Payment and customer share a direct link through customer_id. 
--- SUM(p.amount) calculates total revenue per customer, and RANK() orders customers by highest spend.
--- GROUP BY collapses payments into one row per customer.
+INNER JOIN rental r
+    ON p.rental_id = r.rental_id
+INNER JOIN store s
+    ON c.store_id = s.store_id
+GROUP BY s.store_id, c.customer_id, c.first_name, c.last_name
+ORDER BY s.store_id, `Customer Rank`;
 
-SELECT 
-    s.store_id,
-    CONCAT(c.first_name, ' ', c.last_name) AS customer_name,
-    SUM(p.amount) AS total_spent,
-    COUNT(r.rental_id) AS rental_count,
-    RANK() OVER (PARTITION BY s.store_id ORDER BY SUM(p.amount) DESC) AS customer_rank
-FROM customer c
-JOIN store s ON c.store_id = s.store_id
-JOIN payment p ON c.customer_id = p.customer_id
-JOIN rental r ON p.rental_id = r.rental_id
-GROUP BY s.store_id, c.customer_id;
+-- Explanation of logic:
+-- Question demands top revenue-generating customers ranked within each store.
+-- Payment and customer share a direct link through customer_id and to store through store_id.
+-- Rental is joined through payment's rental_id to capture rental count per customer.
+-- SUM(p.amount) calculates total spent and COUNT(r.rental_id) counts rentals per customer.
+-- RANK() with PARTITION BY store_id ranks customers independently within each store,
+-- so each store has its own top customer.
+-- GROUP BY collapses all payments into one row per customer per store.
 
 -- =========================================================
 -- Question 8: 
 -- Analyze monthly rental trends by category.  
 -- ==========================================================
+WITH monthly_rentals AS (
+    SELECT 
+        DATE_FORMAT(r.rental_date, '%Y-%m') AS rental_month,
+        c.name AS category_name,
+        COUNT(r.rental_id) AS total_rentals
+    FROM rental r
+    INNER JOIN inventory i
+        ON r.inventory_id = i.inventory_id
+    INNER JOIN film_category fc
+        ON i.film_id = fc.film_id
+    INNER JOIN category c
+        ON fc.category_id = c.category_id
+    GROUP BY rental_month, c.name
+)
+SELECT 
+    rental_month AS 'Rental Month',
+    category_name AS 'Category Name',
+    total_rentals AS 'Total Rentals',
+    total_rentals - LAG(total_rentals) OVER (PARTITION BY category_name ORDER BY rental_month) AS 'Month over Month Change'
+FROM monthly_rentals
+ORDER BY category_name, rental_month;
+-- Explanation of logic:
+-- Question demands monthly rental trends and month-over-month change per category.
+-- There is no direct link from rental to category, so inventory and film_category
+-- act as bridges through inventory_id and film_id.
+-- A CTE (monthly_rentals) is used to first calculate total rentals per month per category,
+-- creating a clean temporary result that LAG can reference by name.
+-- LAG pulls the previous month's rental count within each category through PARTITION BY,
+-- and subtracting it from the current month gives the month-over-month change.
 
--- =========================================================
 -- Question 9: 
 -- Evaluate staff performance in rentals and revenue.
 -- ==========================================================
+SELECT sf.staff_id AS 'Staff ID',
+    CONCAT(sf.first_name, ' ', sf.last_name) AS 'Staff Name',
+    COUNT(r.rental_id)  AS 'Total Rentals',
+    SUM(p.amount)       AS 'Total Revenue',
+    ROUND(AVG(p.amount), 2) AS 'Avg Revenue per Rental',
+    RANK() OVER (ORDER BY SUM(p.amount) DESC) AS 'Revenue Rank'
+FROM payment p
+INNER JOIN staff sf
+    ON p.staff_id = sf.staff_id
+INNER JOIN rental r
+    ON r.rental_id = p.rental_id
+GROUP BY sf.staff_id, `Staff Name`
+ORDER BY `Revenue Rank`;
+
+-- Explanation of logic:
+-- Question demands staff performance ranked by revenue.
+-- Payment connects directly to staff through staff_id, and to rental through rental_id.
+-- COUNT(r.rental_id) counts total rentals, SUM(p.amount) calculates total revenue,
+-- and AVG(p.amount) measures average revenue per rental.
+-- RANK() orders staff members globally by highest total revenue.
+-- GROUP BY collapses all payments into one row per staff member.
 
 -- =========================================================
 -- Question 10: 
--- Provide strategic recommendations for revenue growth.  
+-- Provide strategic recommendations for revenue growth.   
 -- ==========================================================
+SELECT 
+    c.name AS 'Category Name',
+    DATE_FORMAT(p.payment_date, '%Y-%m') AS 'Current Month',
+    SUM(p.amount) AS 'Current Revenue',
+    LAG(SUM(p.amount)) OVER (PARTITION BY c.name ORDER BY DATE_FORMAT(p.payment_date, '%Y-%m')) AS 'Previous Month Revenue',
+    SUM(p.amount) - LAG(SUM(p.amount)) OVER (PARTITION BY c.name ORDER BY DATE_FORMAT(p.payment_date, '%Y-%m')) AS 'Revenue Difference'
+FROM payment p
+INNER JOIN rental r
+    ON p.rental_id = r.rental_id
+INNER JOIN inventory i
+    ON r.inventory_id = i.inventory_id
+INNER JOIN film_category fc
+    ON i.film_id = fc.film_id
+INNER JOIN category c
+    ON fc.category_id = c.category_id
+GROUP BY c.name, DATE_FORMAT(p.payment_date, '%Y-%m')
+ORDER BY `Revenue Difference` ASC;
+
+-- Explanation of logic:
+-- Question demands identifying film categories with declining monthly revenue.
+-- There is no direct link from payment to category, so rental, inventory,
+-- and film_category act as bridges through rental_id, inventory_id, and film_id.
+-- LAG pulls the previous month's revenue within each category through PARTITION BY,
+-- and subtracting it from the current month gives the revenue difference.
+-- Results are ordered ASC so the largest revenue declines appear first.
+
+
