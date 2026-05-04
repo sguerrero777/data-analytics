@@ -5,12 +5,10 @@ print('Hello world!')
 message = 'Hello world!'
 print(message)
 
-
 # Hello world prints twice because there are two print calls.
 # It is running the first line of code, where it prints 'Hello world!' directly.
 # In line 4, it prints the variable called 'message', which stores 'Hello world!'
 # as a string.
-
 
 
 # Displaying dollars and cents
@@ -28,7 +26,7 @@ print(dollars + cents)
 cents = cents + .25
 print(dollars + cents)
 
-# Concatenating Strings
+# Question 21 - Concatenating Strings
 d_str = '3 dollars'
 c_str = '50 cents'
 print(d_str + ' ' + c_str)
