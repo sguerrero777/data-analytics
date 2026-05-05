@@ -12,15 +12,18 @@
 # my birthday since it is numerically larger, and the month would be the width because it is smaller. 
 # So the dimensions of the rectangle are: length is 26 with a width of 8.
 
+
 # b) Figure out the formula and what the script would look like.
 # The formula for calulating the area of a rectangle is length times width.
 # A = l * w 
+
 
 # Displayed output should be three print statements:
 # Side A is [number] 
 # Side B is [number] 
 # The area of the rectangle is [number]
 
+# =============================================================
 
 # Final Script for Sharleen's Birthday Rectangle
 
