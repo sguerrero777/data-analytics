@@ -24,6 +24,7 @@
 # Your total debts are [number] 
 # Your net worth is [number]
 
+# =============================================================
 
 # Final Script for Sharleen's Current Net Worth
 
