@@ -41,3 +41,8 @@ net_worth = total_assets - total_debt
 print(f'Sharleen\'s total assets are ${total_assets:.2f}')
 print(f'Sharleen\'s total debts are ${total_debt:.2f}')
 print(f'Sharleen\'s net worth is ${net_worth:.2f}')
+
+# Output
+# Sharleen's total assets are $6965.68
+# Sharleen's total debts are $4080.08
+# Sharleen's net worth is $2885.60
