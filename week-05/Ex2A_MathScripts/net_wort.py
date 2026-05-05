@@ -12,7 +12,7 @@
 # include loans (car, mortage, personal, student) and any standard credit card debts or collections.
 
 
-# b)  Discuss and figure out the formula and what the script would look like, making up example values as needed.
+# b) Discuss and figure out the formula and what the script would look like, making up example values as needed.
 # The formula for calculating net worth would be calculating the sum of assests and subtracting the total by the sum
 # of the debts. To calculate my net worth, my variables for assets include liquid money: my checkings and savings accounts.
 # I am a student and don't own any houses, cars, or investments currently. My variables for debts include only the sum of my 
