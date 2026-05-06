@@ -1,6 +1,6 @@
 # ==================================
 # Lab 2 (continued)
-# Script 1: Calculating Tip Amount
+# Script 3: Calculating Tip Amount
 # ==================================
 
 # Brainstorm: How do you calculate the tip amount on a restaurant bill given the tip percentage? 
