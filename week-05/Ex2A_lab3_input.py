@@ -20,7 +20,7 @@ tip_amount = total_bill * (tip_percentage / 100)
 print(f'Your total tip is ${tip_amount:.2f}')
 
 # Observations: What are possible pitfalls with using input()?
-# One pitfull with using inout() is if a calculation is involved
+# One pitfall with using inout() is if a calculation is involved
 # for the end result, and the user enters an input thats invalid 
 # or doesn't match with the format the formula is written, it can
 # affect the accuracy of the output or give an error.

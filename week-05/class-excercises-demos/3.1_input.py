@@ -1,7 +1,7 @@
 # ============================================================
-# Notes: User Input in Python with Examples
 # Sharleen Guerrero
 # May 5, 2026
+# Notes: User Input in Python with Examples
 # ============================================================
 
 
