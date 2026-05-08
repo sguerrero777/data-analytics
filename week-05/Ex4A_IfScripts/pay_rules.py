@@ -13,9 +13,23 @@
 
 pay_rate = float(input('What is your pay rate?: '))
 hours_worked = eval(input('How many hours did you work?: '))
-gross_pay = []
 
-for _ in range(n):
-    name = input('Rep name:').strip()
-    sales = float(input('Monthly sales ($): '))
-    sales_reps.append((name, sales))
+if hours_worked > 40:
+    regular_pay = 40 * pay_rate
+    overtime_hours = hours_worked - 40
+    overtime_pay = overtime_hours * (pay_rate * 1.5)
+    gross_pay = regular_pay + overtime_pay
+else:
+    gross_pay = hours_worked * pay_rate
+
+print(f"{'Pay rate:':<18} ${pay_rate:.2f}")
+print(f"{'Hours worked:':<18} {hours_worked}")
+print(f"{'Gross pay:':<18} ${gross_pay:.2f}")
+
+
+# Output:
+# What is your pay rate?: 17.50
+# How many hours did you work?: 45
+# Pay rate:          $17.50
+# Hours worked:      45
+# Gross pay:         $831.25
