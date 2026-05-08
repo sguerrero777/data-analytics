@@ -46,10 +46,9 @@ print(my_list)
 my_list.pop(0)
 print(my_list)
 
-# Output
-# [2, 99, 4, 5, 6]
+# Output: [2, 99, 4, 5, 6]
 
-# Exercise 5: Use sort() to sort the lsit in ascending order
+# Exercise 5: Use sort() to sort the list in ascending order
 
 my_list.sort()
 print(my_list)
@@ -70,25 +69,22 @@ print(my_list.index(3))
 # Since I removed the value of 3 in excercise 3, I had to add it back to 
 # find it's index position
 
-# Output:
-# 5
+# Output: 5
 
 # Exercise 8: Use count() to count how many times 3 appears 
 
 my_list.count(3)
 print(my_list.count(3))
 
-# Output
-# 1
+# Output: 1
 
 # Exercise 9: Use slicing to extract elements from index 1 to 3
 
 print(my_list[1:3])
 
-# Output
-# [6, 5]
+# Output: [6, 5]
 
-# Excercise 10: Use copy() to create a copy of the list
+# Exercise 10: Use copy() to create a copy of the list
 
 print(my_list.copy())
 
