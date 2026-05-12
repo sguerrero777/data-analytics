@@ -1,0 +1,106 @@
+============================================================
+NOTES: Pseudocode
+============================================================
+
+WHAT IS PSEUDOCODE?
+------------------------------------------------------------
+Pseudocode is a way of planning out your code in plain English
+before you write it. It is not actual code and cannot be run,
+it is just a tool to help you think through the logic of what
+I want the program to do, step by step. You can also use a 
+flowchart as a precursor to drafting the pseudocode.
+
+Flowchart: https://app.diagrams.net/
+
+Pseudocode has no strict rules, it just needs to be clear
+enough that anyone reading it understands the logic. The
+importance lies in the logic and order of steps.
+
+WHY USE PSEUDOCODE?
+------------------------------------------------------------
+- Helps you plan before you code
+- Makes it easier to catch logical mistakes early
+- Helps break big problems into smaller steps
+- Makes it easier to translate your thinking into real code
+
+============================================================
+KEY PSEUDOCODE KEYWORDS AND WHAT THEY MAP TO IN PYTHON
+============================================================
+
+    Pseudocode          Python equivalent
+    ----------          -----------------
+    START / END         Beginning and end of a program
+    INPUT               input()
+    DISPLAY / PRINT     print()
+    IF / THEN           if:
+    ELSE IF             elif:
+    OTHERWISE           else:
+    FOR EACH            for loop
+    WHILE               while loop
+    REPEAT              loop structure
+
+
+============================================================
+EXAMPLE 1: Determining if a Number is Positive or Negative
+============================================================
+
+PSEUDOCODE:
+------------------------------------------------------------
+START
+
+    Input a number
+
+    IF number is greater than 0 THEN
+        Display "Positive Number"
+
+    ELSE IF number is less than 0 THEN
+        Display "Negative Number"
+
+    OTHERWISE
+        Display "Invalid"
+
+END
+
+------------------------------------------------------------
+WHAT THIS MEANS:
+- We start by getting a number from the user
+- We check if it is positive (greater than 0)
+- If not, we check if it is negative (less than 0)
+- If neither, it must be 0, which we display as "Invalid"
+- The IF / ELSE IF / OTHERWISE structure maps directly to
+  Python's if / elif / else statements for conditions.
+
+============================================================
+EXAMPLE 2: Making Tea
+============================================================
+
+PSEUDOCODE:
+------------------------------------------------------------
+START
+
+    Boil water
+
+    Get a cup
+
+    Place tea bag in cup
+
+    Pour hot water into cup
+
+    Wait 3 to 5 minutes for tea to steep
+
+    Remove tea bag
+
+    Ask if sugar is wanted
+    IF yes THEN
+        Add sugar
+
+    Ask if milk is wanted
+    IF yes THEN
+        Add milk
+
+    Stir tea
+
+    Serve tea
+
+
+
