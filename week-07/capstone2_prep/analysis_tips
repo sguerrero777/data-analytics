@@ -1,0 +1,71 @@
+## Skincare Quiz — Key Lessons Learned
+
+### Data Inspection
+- float column when expecting int = NaN values present
+- Pandas auto-converts int → float when NaN exists
+- int cannot store NaN, float can
+- NaN in customer_id = non-member, not corrupted data
+- Always use .isna() or .isnull() to check for NaN
+- NEVER use == NaN — always returns False!
+
+### Filtering
+- .isin() → multiple values in same column
+- == → single value condition
+- & → AND (both conditions must be true)
+- | → OR (either condition)
+- Each condition must be wrapped in ()
+- Syntax: df[(condition1) & (condition2)]
+- | lives OUTSIDE .isin(), not inside the list!
+
+### Merging
+- on= → same column name in both tables
+- left_on/right_on → different column names
+- how='left' → keep ALL rows from left table
+- Left join + Gold filter = non-members 
+  naturally eliminated
+- Always verify row count after merging!
+
+### Dates & Groupby
+- Always convert date BEFORE any dt operations
+- pd.to_datetime() → convert string to datetime
+- .dt.to_period('M') → collapse to year-month
+- .dt.year → extract year for filtering
+- FILTER first → then AGGREGATE!
+  Wrong order = wrong totals!
+- Calculate derived columns BEFORE groupby
+  e.g. revenue = price × units_sold
+
+### Pivot Tables
+- idxmax() → top performing row per column
+  perfect for finding top brand per region
+- sort_values → ranks all items in ONE column
+- idxmax() → top item across ALL columns at once
+- $0 in pivot table ≠ doesn't exist there
+  Could be: no data, seasonal, new market
+  Always investigate WHY before concluding!
+
+### Visualization
+- Line chart → trends over time
+- Vertical bar → comparing 4-6 categories
+- Horizontal bar → ranking many items 
+  with long labels
+- Data prep = steps BEFORE touching matplotlib
+  (convert dates, calculate revenue, filter, groupby)
+- Chart styling = steps AFTER data is ready
+  (colors, markers, labels, legend)
+- tight_layout → prevents elements being cut off
+- xticks(rotation=45, ha='right') → fixes 
+  overlapping x axis labels
+- These are TWO different problems!
+
+### Professional Analyst Rules
+- Never manipulate results to match 
+  manager's expectations
+- Report what DATA says not what manager wants
+- When results are unexpected:
+  1. Verify your code is correct
+  2. If correct → present findings honestly
+  3. Offer alternatives to relax criteria
+- Data integrity > manager approval
+- $0 revenue needs investigation before 
+  business decisions are made
