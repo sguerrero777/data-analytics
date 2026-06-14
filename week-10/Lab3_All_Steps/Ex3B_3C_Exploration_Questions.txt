@@ -1,0 +1,79 @@
+Exercise 3.B - 3.C | Exploration Q&A 
+Sharleen Guerrero
+June 11, 2026
+
+-------------------------------------------------------------------
+EXERCISE 3.B Q&A
+-------------------------------------------------------------------
+
+Q: What do the clusters represent? Which clusters represent the most valuable stores?
+A: Clusters are groups of stores that Power BI automatically identified as being
+similar to each other based on two measurements — Sales Per Sq Ft (how much
+revenue each store generates per square foot of space) and Gross Margin This Year
+(how profitable each store is after costs). Think of it like Power BI sorting
+stores into buckets based on how efficient AND how profitable they are, without
+you having to manually decide which stores belong together. The most valuable
+stores are in Cluster 2 because on the scatter chart they appear in the upper
+right corner, meaning they have both high sales per square foot AND high gross
+margin — they are making the most money and doing it efficiently. Clusters in
+the lower left are the opposite — lower sales efficiency and lower profitability.
+
+Q: How easy or difficult is it to read the stacked bar chart when district groups
+and clusters share the same color scheme?
+A: It is very difficult to read because Power BI automatically reuses the same
+colors from the Regional Manager Planning page for the district groups legend,
+and then applies those same colors again to the four clusters. When both color
+schemes appear on the same page side by side, it becomes impossible to tell
+which color belongs to which grouping — a viewer could easily confuse a district
+group color with a cluster color and draw the wrong conclusions. The fix is to
+change the cluster colors to a completely different palette, like shades of blue
+and gray, so that each grouping has its own distinct visual identity and the
+chart becomes much easier to interpret at a glance.
+
+-------------------------------------------------------------------
+EXERCISE 3.C Q&A
+-------------------------------------------------------------------
+
+Q: What happens when you right-click a column in the District Monthly Sales
+column chart and use Drill through?
+A: When you right-click a column and select Drill through, Power BI takes you
+to a different report page that is pre-filtered to show only the data for
+whatever you clicked on. For example, if you right-click on a specific store's
+column, it will jump to either the Store Details page or the Regional Manager
+Planning page and automatically filter all the visuals on that page to show
+only that store's information. This saves a lot of time because instead of
+manually applying filters, you can go from a high-level summary view straight
+to a detailed view for any specific store in just one right-click.
+
+Q: Why is the drill-through option different in the scatter chart compared
+to the column chart?
+A: The drill-through option is different because drill-through only works when
+the visual you are clicking on contains the exact same field that was set up
+as a drill-through field. In this report, StoreNumberName was set as the
+drill-through field, which means drill-through works on any visual that uses
+StoreNumberName. The column chart uses StoreNumberName so it works perfectly.
+However, the scatter chart plots data by Category, not by StoreNumberName,
+so Power BI cannot match it to the drill-through field and the option is
+either missing or limited. The key takeaway is that drill-through is field
+specific — if the visual does not contain the drill-through field, the
+feature will not work the same way.
+
+Q: How can you scrub or clear the applied drill-through filters on the
+Store Details page?
+A: When you drill through to a page, Power BI automatically applies filters
+based on what you clicked. To clear those filters and reset the page back to
+showing all data, you can look in the Visualizations pane where you added the
+drill-through fields. Next to each drill-through field there is a small eraser
+icon. Clicking that eraser removes the filter that was applied when you drilled
+through, so the page goes back to its unfiltered state. You can also use the
+back arrow that Power BI automatically adds to the top left corner of any
+drill-through page to go back to the page you came from.
+
+Q: What extra field did you add to the Map Tooltip card and why?
+A: FiscalYear was added as an extra field to the Map Tooltip card. This is
+useful because it gives the person viewing the tooltip important context about
+which time period the sales data belongs to. Without it, someone looking at
+the Total Sales figure in the tooltip would not know if that number represents
+one year of sales or multiple years combined. By including FiscalYear, the
+tooltip becomes more informative and helps the viewer interpret the data
+accurately without having to go look it up somewhere else on the report.

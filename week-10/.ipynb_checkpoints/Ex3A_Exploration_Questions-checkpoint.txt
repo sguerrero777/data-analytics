@@ -1,0 +1,33 @@
+Exercise 3.A | Exploration Q&A 
+Sharleen Guerrero
+June 11, 2026
+ 
+Q: What types of visuals are included on the Overview page? What is being displayed in each?
+A: Pie chart (This Year Sales by Chain – Lindseys vs Fashions Direct by contribution),
+a geographical map (This Year Sales by Postal Code and Store Type), a clustered column
+chart (Total Sales Variance by FiscalMonth and District Manager), two card visuals
+(10 New Stores, 104 Total Stores), and a bubble/scatter chart (Total Sales Variance %,
+Sales Per Sq Ft, and This Year Sales by District).
+ 
+Q: How many stores does the Lindseys chain include? In how many districts?  
+A: 67 stores across 5 districts (LI-01 through LI-05).
+ 
+Q: Now click on Fashions Direct to change the filter. How many stores does this chain include? In how many districts?
+A: 37 stores across 4 districts (FD-01 through FD-04).
+ 
+Q: How many new stores belong to the Lindseys chain? What is the “This Year Sales” amount so far for new Lindseys stores?
+A: 4 new stores, $212,856 in This Year Sales.
+ 
+Q: What district does Andrew Ma manage? How many stores does it include? How many of these are new stores? 
+A: Manages FD-04 (Fashions Direct), 10 stores, 2 new stores.
+ 
+Q: Map vs card visual: which is more reliable?
+A: The card visual is more reliable for exact filtered counts because the map uses
+postal codes which can span multiple store types, making it less precise.
+ 
+Q: Boss feedback: how would you improve the Overview page?
+A: Add borders for visual separation, fix title placement overlapping the pie chart,
+add a slicer for district manager filtering, change the column chart to stacked columns
+for readability, and change the pie chart to a donut chart. Follow-up questions: what
+specifically makes it unreadable (font density, layout?), and who is the audience /
+how will it be displayed?

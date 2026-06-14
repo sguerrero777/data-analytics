@@ -1,0 +1,52 @@
+OrderID,OrderDate,CustomerName,Product,Category,Region,Quantity,UnitPrice,Discount,SalesRep
+1001,2024-01-05, TechZone Inc,Laptop Pro 15,Electronics,North,2,1250.00,0.05,Maria Johnson
+1002,01/08/2024,BrightPath LLC,Wireless Mouse,Accessories,South,10,25.50,0,james smith
+1003,2024-01-10, BrightPath LLC ,USB-C Hub,Accessories,South,5,45.00,0.10,James Smith
+1004,2024-01-12,Nexus Corp,Monitor 27",Electronics,East,3,399.99,0.05,Carlos Rivera
+1005,2024-01-15,Greenfield Co.,Mechanical Keyboard,Accessories,West,7,89.99,0,Sarah Lee
+1006,January 18 2024,TechZone Inc,Laptop Pro 15,Electronics,North,1,1250.00,0.10,Maria Johnson
+1007,2024-01-20,Pinnacle Group,Webcam HD,Accessories,North,15,65.00,0.05,Maria Johnson
+1008,2024-01-22,NEXUS CORP,External SSD 1TB,Storage,East,4,110.00,0,Carlos Rivera
+1009,2024-01-25,Orion Retail,Laptop Pro 15,Electronics,South,2,1250.00,0.15,James Smith
+1010,2024-01-28,Greenfield Co.,USB-C Hub,Accessories,West,8,45.00,0.05,Sarah Lee
+1011,2024-02-01,Momentum Ltd,Monitor 27",Electronics,East,2,399.99,0.10,Carlos Rivera
+1012,2024-02-03,TechZone Inc,Mechanical Keyboard,Accessories,North,5,89.99,0,Maria Johnson
+1013,02/06/2024,BrightPath LLC,External SSD 1TB,Storage,South,6,110.00,0.05,James Smith
+1014,2024-02-09,Pinnacle Group,Webcam HD,Accessories,North,20,65.00,0.10,Maria Johnson
+1015,2024-02-11,Orion Retail,Wireless Mouse,Accessories,South,12,25.50,0,James Smith
+1016,2024-02-14, Nexus Corp,Monitor 27",Electronics,East,1,399.99,0.05,Carlos Rivera
+1017,2024-02-17,Greenfield Co.,Laptop Pro 15,Electronics,West,3,1250.00,0.10,Sarah Lee
+1018,2024-02-19,Momentum Ltd,USB-C Hub,Accessories,East,10,45.00,0,Carlos Rivera
+1019,February 22 2024,TechZone Inc,External SSD 1TB,Storage,North,4,110.00,0.15,Maria Johnson
+1020,2024-02-25,Pinnacle Group,Mechanical Keyboard,Accessories,North,6,89.99,0.05,Maria Johnson
+1021,2024-03-01,Orion Retail,Laptop Pro 15,Electronics,South,1,1250.00,0,James Smith
+1022,2024-03-04,BrightPath LLC,Webcam HD,Accessories,South,8,65.00,0.10,James Smith
+1023,2024-03-07,Nexus Corp,Wireless Mouse,Accessories,East,20,25.50,0.05,Carlos Rivera
+1024,2024-03-09,TechZone Inc,Monitor 27",Electronics,North,2,399.99,0,Maria Johnson
+1025,2024-03-12,Momentum Ltd,External SSD 1TB,Storage,East,5,110.00,0.10,Carlos Rivera
+1026,03/15/2024,Greenfield Co.,USB-C Hub,Accessories,West,12,45.00,0,Sarah Lee
+1027,2024-03-18,Pinnacle Group,Laptop Pro 15,Electronics,North,2,1250.00,0.05,Maria Johnson
+1028,2024-03-21,Orion Retail,Mechanical Keyboard,Accessories,South,9,89.99,0.10,James Smith
+1029,2024-03-24, TechZone Inc,Webcam HD,Accessories,North,10,65.00,0,Maria Johnson
+1030,2024-03-27,BrightPath LLC,Monitor 27",Electronics,South,3,399.99,0.05,James Smith
+1031,2024-04-02,nexus corp,External SSD 1TB,Storage,East,7,110.00,0.10,Carlos Rivera
+1032,2024-04-05,Momentum Ltd,Laptop Pro 15,Electronics,East,1,1250.00,0,Carlos Rivera
+1033,2024-04-08,Greenfield Co.,Wireless Mouse,Accessories,West,15,25.50,0.05,Sarah Lee
+1034,April 10 2024,Pinnacle Group,USB-C Hub,Accessories,North,8,45.00,0.10,Maria Johnson
+1035,2024-04-13,Orion Retail,Monitor 27",Electronics,South,2,399.99,0,James Smith
+1036,2024-04-16,TechZone Inc,Mechanical Keyboard,Accessories,North,4,89.99,0.05,Maria Johnson
+1037,2024-04-19,BrightPath LLC,Laptop Pro 15,Electronics,South,2,1250.00,0.15,James Smith
+1038,2024-04-22,Nexus Corp,Webcam HD,Accessories,East,18,65.00,0,Carlos Rivera
+1039,2024-04-25,Momentum Ltd,Wireless Mouse,Accessories,East,10,25.50,0.10,Carlos Rivera
+1040,2024-04-28,Greenfield Co.,External SSD 1TB,Storage,West,3,110.00,0.05,Sarah Lee
+1001,2024-01-05, TechZone Inc,Laptop Pro 15,Electronics,North,2,1250.00,0.05,Maria Johnson
+1041,2024-05-01,Pinnacle Group,Monitor 27",Electronics,North,1,399.99,0.10,Maria Johnson
+1042,2024-05-04,Orion Retail,USB-C Hub,Accessories,South,6,45.00,0,James Smith
+1043,05/07/2024,TechZone Inc,Laptop Pro 15,Electronics,North,3,1250.00,0.05,Maria Johnson
+1044,2024-05-10,BrightPath LLC,Mechanical Keyboard,Accessories,South,7,89.99,0.10,James Smith
+1045,2024-05-13,Nexus Corp,Webcam HD,Accessories,East,12,65.00,0,Carlos Rivera
+1046,2024-05-16,Momentum Ltd,External SSD 1TB,Storage,East,4,110.00,0.05,Carlos Rivera
+1047,2024-05-19,Greenfield Co.,Wireless Mouse,Accessories,West,20,25.50,0,Sarah Lee
+1048,May 22 2024,Pinnacle Group,Laptop Pro 15,Electronics,North,2,1250.00,0.10,Maria Johnson
+1049,2024-05-25,Orion Retail,Monitor 27",Electronics,South,3,399.99,0.15,James Smith
+1050,2024-05-28,TechZone Inc,USB-C Hub,Accessories,North,9,45.00,0.05,Maria Johnson
