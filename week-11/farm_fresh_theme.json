@@ -1,0 +1,74 @@
+{
+    "name": "Farm Fresh",
+    "dataColors": [
+        "#C0392B",
+        "#7D9E4E",
+        "#D4AC0D",
+        "#8B6347",
+        "#E8735A",
+        "#A8C97F",
+        "#E8C94D",
+        "#B08060"
+    ],
+    "background": "#F7F5F0",
+    "foreground": "#2C2C2C",
+    "tableAccent": "#C0392B",
+    "visualStyles": {
+        "*": {
+            "*": {
+                "background": [{
+                    "color": {"solid": {"color": "#FFFFFF"}},
+                    "transparency": 0
+                }],
+                "fontColor": [{
+                    "color": {"solid": {"color": "#2C2C2C"}}
+                }]
+            }
+        },
+        "page": {
+            "*": {
+                "background": [{
+                    "color": {"solid": {"color": "#F7F5F0"}},
+                    "transparency": 0
+                }],
+                "outspace": [{
+                    "color": {"solid": {"color": "#EDE9E0"}},
+                    "transparency": 0
+                }]
+            }
+        },
+        "title": {
+            "*": {
+                "color": [{
+                    "color": {"solid": {"color": "#2C2C2C"}}
+                }],
+                "background": [{
+                    "color": {"solid": {"color": "#FFFFFF"}},
+                    "transparency": 0
+                }]
+            }
+        }
+    },
+    "textClasses": {
+        "callout": {
+            "fontSize": 45,
+            "fontFace": "DIN",
+            "color": "#2C2C2C"
+        },
+        "title": {
+            "fontSize": 16,
+            "fontFace": "DIN",
+            "color": "#2C2C2C"
+        },
+        "header": {
+            "fontSize": 12,
+            "fontFace": "DIN",
+            "color": "#2C2C2C"
+        },
+        "label": {
+            "fontSize": 10,
+            "fontFace": "DIN",
+            "color": "#555555"
+        }
+    }
+}
